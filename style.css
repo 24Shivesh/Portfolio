@@ -9,10 +9,48 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: #252222;
+  color: #c7bebe;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 12px;
+  background: #2a2a2a;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 206, 206);
+
+  border-radius: 50px;
+}
+
+#cursor {
+  height: 20px;
+  width: 20px;
+  background-color: #3e3b3b;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+  transition: all linear 0.1s;
+}
+#cursor-blur {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(208, 216, 200, 0.3);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(80px);
+  z-index: 9;
+  transition: all linear 0.4s;
 }
 
 p {
@@ -431,3 +469,5 @@ footer {
 footer p {
   text-align: center;
 }
+
+
