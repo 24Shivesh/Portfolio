@@ -39,8 +39,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #3e3b3b;
   border-radius: 50%;
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   transition: all linear 0.1s;
+  pointer-events: none;
 }
 #cursor-blur {
   height: 500px;
@@ -49,7 +50,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   position: fixed;
   filter: blur(80px);
-  z-index: 9;
+  z-index: 10;
+  pointer-events: none;
   transition: all linear 0.4s;
 }
 
@@ -66,8 +68,7 @@ a,
 
 /* DESKTOP NAV */
 
-nav,
-.nav-links {
+nav,.nav-links {
   display: flex;
 }
 
